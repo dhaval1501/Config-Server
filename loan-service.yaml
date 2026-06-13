@@ -1,0 +1,12 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    username: dhaval
+    password: dhaval123
+    url: jdbc:postgresql://localhost:5433/loandb
+
+springdoc:
+  packages-to-scan: com.lms.loan_service.controller
+  paths-to-match: /**
