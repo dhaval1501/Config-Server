@@ -12,3 +12,5 @@ spring:
 springdoc:
   packages-to-scan: com.lms.user_service.controller
   paths-to-match: /**
+  api-docs:
+    path: /v3/api-docs  
