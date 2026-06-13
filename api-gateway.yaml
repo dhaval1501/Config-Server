@@ -26,12 +26,14 @@ spring:
           # filters:
           #   - StripPrefix=3
 
+          # gateway yaml
         - id: student-service-docs
           uri: lb://student-service
           predicates:
             - Path=/aggregate/student-service/v3/api-docs
           filters:
-            - RewritePath=/aggregate/student-service/(?<remaining>.*), /$\{remaining}
+            - RewritePath=/aggregate/student-service/(?<remaining>.*), /api/v1/students/$\{remaining}
+
 
         - id: book-service-docs
           uri: lb://book-service
