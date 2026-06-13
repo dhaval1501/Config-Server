@@ -58,6 +58,7 @@ spring:
             - Path=/aggregate/book-service/v3/api-docs
           filters:
             - RewritePath=/aggregate/book-service/(?<remaining>.*), /api/v1/books/$\{remaining}
+            - PreserveHostHeader
 
         - id: loan-service-docs
           uri: lb://loan-service
@@ -65,6 +66,7 @@ spring:
             - Path=/aggregate/loan-service/v3/api-docs
           filters:
             - RewritePath=/aggregate/loan-service/(?<remaining>.*), /api/v1/loans/$\{remaining}
+            - PreserveHostHeader
 
 springdoc:
   swagger-ui:
