@@ -49,6 +49,7 @@ spring:
             - Path=/aggregate/student-service/v3/api-docs
           filters:
             - RewritePath=/aggregate/student-service/(?<remaining>.*), /api/v1/students/$\{remaining}
+            - PreserveHostHeader
 
 
         - id: book-service-docs
