@@ -1,7 +1,7 @@
 server:
   port: 8083
   servlet:
-    context-path: /api/loans
+    context-path: /api/v1/loans
 
 spring:
   datasource:
