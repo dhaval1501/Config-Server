@@ -1,0 +1,12 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    username: dhaval
+    password: dhaval123
+    url: jdbc:postgresql://localhost:5433/userdb
+
+springdoc:
+  packages-to-scan: com.lms.user_service.controller
+  paths-to-match: /**
