@@ -8,23 +8,23 @@ spring:
         - id: student-service
           uri: lb://student-service
           predicates:
-            - Path=/api/student/**
+            - Path=/api/v1/students/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=3
 
         - id: book-service
           uri: lb://book-service
           predicates:
-            - Path=/api/book/**
+            - Path=/api/v1/books/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=3
 
         - id: loan-service
           uri: lb://loan-service
           predicates:
-            - Path=/api/loan/**
+            - Path=/api/v1/loans/**
           filters:
-            - StripPrefix=2
+            - StripPrefix=3
 
         - id: student-service-docs
           uri: lb://student-service
