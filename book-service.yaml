@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    username: dhaval
+    password: dhaval123
+    url: jdbc:postgresql://localhost:5433/bookdb
+
+springdoc:
+  packages-to-scan: com.lms.book_service.controller
+  paths-to-match: /**
