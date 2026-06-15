@@ -6,16 +6,16 @@ eureka:
     service-url:
       defaultZone: http://localhost:8761/eureka/
 
-# spring:
-#   jpa:
-#     show-sql: true
-#     hibernate:
-#       ddl-auto: update
-#     properties:
-#       hibernate:
-#         format_sql: true
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
 logging:
   level:
-    org.hibernate.SQL: DEBUG
+    # org.hibernate.SQL: DEBUG
     org.hibernate.orm.jdbc.bind: TRACE
     # org.hibernate.orm.results: TRACE
