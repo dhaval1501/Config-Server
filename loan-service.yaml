@@ -8,6 +8,8 @@ spring:
     username: dhaval
     password: dhaval123
     url: jdbc:postgresql://localhost:5433/loandb
+  kafka:
+    bootstrap-servers: broker:9092
 
 springdoc:
   packages-to-scan: com.lms.loan_service.controller
