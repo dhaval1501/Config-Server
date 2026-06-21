@@ -10,6 +10,9 @@ spring:
     url: jdbc:postgresql://localhost:5433/loandb
   kafka:
     bootstrap-servers: localhost:9092
+  producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerialize
     # consumer:
     #   group-id: loan-group
     #   auto-offset-reset: earliest
