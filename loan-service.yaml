@@ -10,6 +10,9 @@ spring:
     url: jdbc:postgresql://localhost:5433/loandb
   kafka:
     bootstrap-servers: localhost:9092
+    # consumer:
+    #   group-id: loan-group
+    #   auto-offset-reset: earliest
 
 springdoc:
   packages-to-scan: com.lms.loan_service.controller
