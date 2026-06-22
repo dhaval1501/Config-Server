@@ -19,7 +19,7 @@ spring:
         key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
         value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
         properties:
-          spring.json.trusted.packages: com.lms.loan_service.kafka.dto
+          spring.json.trusted.packages: com.lms.lms_common.dto.kafka
 
 springdoc:
   packages-to-scan: com.lms.loan_service.controller
