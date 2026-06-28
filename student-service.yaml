@@ -5,8 +5,6 @@ server:
   # forward-headers-strategy: framework
 
 spring:
-  profiles:
-      active: monitoring
   datasource:
     username: dhaval
     password: dhaval123
