@@ -18,6 +18,8 @@ logging:
     reactor.netty: DEBUG
 
 spring:
+  profiles:
+    active: monitoring
   cloud:
     gateway:
       routes:
