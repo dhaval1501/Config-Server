@@ -4,8 +4,6 @@ server:
     context-path: /api/v1/loans
 
 spring:
-  profiles:
-    active: monitoring,kafka
   datasource:
     username: dhaval
     password: dhaval123
