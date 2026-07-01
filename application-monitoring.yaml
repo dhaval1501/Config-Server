@@ -4,14 +4,14 @@ management:
       exposure:
         include: "*"
 
-  endpoint:
-    health:
-      show-details: always
+  # endpoint:
+  #   health:
+  #     show-details: always
 
-  prometheus:
-    metrics:
-      export:
-        enabled: true
+  # prometheus:
+  #   metrics:
+  #     export:
+  #       enabled: true
 
   tracing:
     sampling:
