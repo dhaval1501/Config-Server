@@ -8,10 +8,10 @@ management:
     health:
       show-details: always
 
-  # prometheus:
-  #   metrics:
-  #     export:
-  #       enabled: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true
 
   tracing:
     sampling:
