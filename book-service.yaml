@@ -8,6 +8,11 @@ spring:
     username: dhaval
     password: dhaval123
     url: jdbc:postgresql://localhost:5433/bookdb
+  data:
+    redis:
+      host: redis         
+      port: 6379
+      password: ${REDIS_PASSWORD:redis123}
   # kafka:
   #   bootstrap-servers: localhost:9092
   #   producer:
